@@ -1,15 +1,18 @@
 <main
-  class="lg:h-[100%] flex justify-center lg:justify-between items-center w-11/12 mx-auto"
+  class="lg:h-[100%] flex justify-center lg:justify-between items-center w-10/12 lg:w-11/12 mx-auto"
 >
   <!-- Menu Card -->
   <section
-    class="w-[500px] h-[77vh] md:h-[70vh] lg:h-[80vh] bg-[#FF8383] p-6 rounded-[50px] border-[3px] border-[#FF7DA3] shadow-[10px_4px_6px_#d63e3ecf]"
+    class="relative flex justify-center items-center w-[440px] h-[77vh] md:h-[70vh] lg:h-[80vh] bg-[#FF8383] p-6 rounded-[50px] border-[3px] border-[#FF7DA3] shadow-[10px_4px_6px_#d63e3ecf]"
   >
+
+  <!-- First Absolute -->
+  <img class="absolute top-0 w-9/12" src="./welcome.png" alt="Welcome Heading">
     <!-- Area de botones unicamente -->
     <div
       class="bg-[#FFC7D2] h-full rounded-[50px] border-[5px] border-white flex justify-center items-center"
     >
-      <div class="flex flex-col h-full justify-center items-center gap-4">
+      <div class="flex flex-col h-4/5 justify-center items-center gap-4">
         <!-- Primer botón -->
         <a href="#">
           <img
@@ -52,12 +55,20 @@
         </a>
       </div>
     </div>
+    <!-- Second Absolute -->
+    <div class="absolute px-4 flex w-7/12 h-14 bottom-0 border-[5px] rounded-[75px] border-white bg-[#FFB2B7]">
+      <a class="w-full h-full flex justify-center items-center" href="#"><img class="h-full" src="ig-icon.png" alt="Instagram"></a>
+      <a class="w-full h-full flex justify-center items-center" href="#"><img class="h-full" src="fb-icon.png" alt="Facebook"></a>
+      <a class="w-full h-full flex justify-center items-center" href="#"><img class="h-full" src="email-icon.png" alt="Email"></a>
+    </div>
   </section>
 
-  <section class="flex flex-row gap-5">
+  <!-- All Arts -->
+
+  <section class="flex flex-row gap-8">
     <!-- Art 01 -->
     <section
-      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px]"
+      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
     >
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
@@ -67,7 +78,7 @@
     </section>
     <!-- Art 02 -->
     <section
-      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px]"
+      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
     >
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
@@ -77,7 +88,7 @@
     </section>
     <!-- Art 03 -->
     <section
-      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px]"
+      class="hidden lg:flex w-[242px] lg:h-[55vh] bg-[#FF8383] p-6 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
     >
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
