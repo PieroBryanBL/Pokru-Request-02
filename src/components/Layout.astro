@@ -1,0 +1,40 @@
+---
+interface Props {
+  pageTitle?: string;
+  pageDescription?: string;
+  styles?: string;
+}
+
+const { pageTitle, pageDescription, styles } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+  </head>
+  <body style={styles}>
+    <slot />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./bg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </body>
+</html>
