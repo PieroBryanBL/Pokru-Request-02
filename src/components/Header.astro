@@ -1,7 +1,33 @@
-<header class="flex justify-center lg:justify-end px-8">
-    <!-- Logo and Icon Portrait -->
-    <section class="absolute w-full md:w-[440px] flex justify-center items-center">
-        <img class="w-32 md:w-[234px]" src="./logo.png" alt="Logo Pokru">
-        <img class="w-32 md:w-[180px]" src="./portrait.png" alt="Portrait Pokru">
-    </section>
+<header
+  class="w-full flex flex-col lg:flex-row-reverse items-center lg:absolute top-0 right-0 p-10 lg:gap-6"
+>
+  <div class="flex flex-row-reverse justify-end items-center">
+    <img
+      class="w-36 lg:w-44 object-cover"
+      src="./portrait.png"
+      alt="Portrait Pokru"
+    />
+    <img class="w-40 lg:w-64 object-cover" src="./logo.png" alt="Logo Pokru" />
+  </div>
+
+  <div class="hidden xl:flex">
+    <!-- The button to open modal -->
+    <label
+      for="my-modal-4"
+      class="btn text-white bg-red-300 p-5 border-white hover:bg-[#FF8383] hover:border-red-400 flex justify-center items-center"
+      ><i class="fa-solid fa-circle-info mx-2"></i>About me</label
+    >
+    <!-- Put this part before </body> tag -->
+    <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+    <label for="my-modal-4" class="modal cursor-pointer">
+      <label class="modal-box relative bg-white" for="">
+        <h3 class="text-lg font-bold">Hello, I'm Pokru ♡</h3>
+        <p class="py-4">
+          This is my new page to get to know me and order commissions for
+          illustrations, animations, or graphics. Let's collaborate to bring
+          your ideas to life!
+        </p>
+      </label>
+    </label>
+  </div>
 </header>
