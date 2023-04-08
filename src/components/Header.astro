@@ -1,31 +1,58 @@
 <header
   class="w-full flex flex-col lg:flex-row-reverse items-center lg:absolute top-0 right-0 p-10 lg:gap-6"
 >
-  <div class="flex flex-row-reverse justify-end items-center">
-    <a href="index.html" class="w-1/2"
-      ><img
-        class=" sm:w-72 lg:w-44 object-cover"
+  <!-- Imagenes de logo y Portrait -->
+  <div
+    class="flex flex-row-reverse justify-end items-center animate-slide-left"
+  >
+    <a href="index.html" class="w-1/2">
+      <img
+        class="sm:w-72 lg:w-44 object-cover"
         src="./portrait.webp"
-        alt="Portrait Pokru"
-      /></a
-    >
-    <a href="index.html" class="w-1/2"
-      ><img
-        class=" sm:w-72 lg:w-64 object-cover"
+        alt="Nombre en imagen de Pokru"
+      />
+    </a>
+    <a href="index.html" class="w-1/2">
+      <img
+        class="sm:w-72 lg:w-64 object-cover"
         src="./logo.webp"
-        alt="Logo Pokru"
-      /></a
-    >
+        alt="Logotipo de Pokru"
+      />
+    </a>
   </div>
 
+  <style>
+    .custom-bounce {
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-name: custom-bounce;
+      animation-timing-function: ease-in-out;
+      will-change: transform;
+      animation-play-state: running;
+    }
+    @keyframes custom-bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-2px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <!-- Botón para ver más información -->
   <div class="hidden xl:flex">
-    <!-- The button to open modal -->
+    <!-- Para abrir la Modal -->
     <label
       for="my-modal-4"
-      class="btn text-white bg-[#FF8383] flex-nowrap text-xl flex h-fit border-white hover:bg-[#e86c6c] hover:border-red-400"
-      ><i class="fa-solid fa-circle-info"></i></label
+      class="btn text-white bg-[#FF8383] flex-nowrap text-xl flex h-fit border-white hover:bg-[#e86c6c] hover:border-red-400 custom-bounce duration-1000 overflow-hidden"
     >
-    <!-- Put this part before </body> tag -->
+      <i class="fa-solid fa-circle-info"></i>
+    </label>
+
     <input type="checkbox" id="my-modal-4" class="modal-toggle" />
     <label for="my-modal-4" class="modal cursor-pointer">
       <label

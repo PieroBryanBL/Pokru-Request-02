@@ -3,77 +3,96 @@
 >
   <!-- Menu Card -->
   <section
-    class="relative flex justify-center items-center w-11/12 sm:w-7/12 lg:w-4/12 bg-[#FF8383] p-4 mb-16 sm:mb-40 lg:mb-0 rounded-[50px] border-[3px] border-[#FF7DA3] shadow-[10px_4px_6px_#d63e3ecf]"
+    class="relative flex justify-center items-center w-11/12 sm:w-7/12 lg:w-4/12 bg-[#FF8383] p-4 mb-16 sm:mb-40 lg:mb-0 rounded-[50px] border-[3px] border-[#FF7DA3] shadow-[10px_4px_6px_#d63e3ecf] animate-slide-right"
   >
     <!-- Area de botones unicamente -->
     <div
       class="bg-[#FFC7D2] rounded-[50px] border-[5px] border-white flex justify-center items-center"
     >
       <div class="flex flex-col justify-center items-center gap-3">
-        <!-- First Absolute -->
+        <!-- Encabezado -->
         <div class="flex justify-center items-center">
           <img
-            class="-translate-y-8 w-11/12"
+            class="-translate-y-8 w-11/12 hover:-rotate-3 transition animate-fade-in-slow"
             src="./welcome.webp"
-            alt="Welcome Heading"
+            alt="Imagen de Bienvenida"
           />
         </div>
-
         <!-- Primer botón -->
         <a href="#">
           <img
-            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3]"
+            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
             src="./portfolio.webp"
-            alt="Portfolio"
+            alt="Portafolio"
           />
         </a>
+
         <!-- Segundo botón -->
         <a href="#">
           <img
-            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3]"
+            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
             src="./prices.webp"
-            alt="Prices"
+            alt="Precios"
           />
         </a>
+
         <!-- Tercer botón -->
         <a href="#">
           <img
-            class="border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3]"
+            class="border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
             src="./ych.webp"
             alt="YCH"
           />
         </a>
+
         <!-- Cuarto botón -->
         <a href="#">
           <img
-            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3]"
+            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
             src="./terms.webp"
-            alt="Terms and conditions"
-          />
-        </a>
-        <!-- Quinto botón -->
-        <a href="#">
-          <img
-            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-7/12 mx-auto px-2 py-1 shadow-[0px_4px_4px_#FF7CA3]"
-            src="./ordernow.webp"
-            alt="Order Now"
+            alt="Términos y condiciones"
           />
         </a>
 
+        <!-- Quinto botón -->
+        <a href="#">
+          <img
+            class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-7/12 mx-auto px-2 py-1 shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
+            src="./ordernow.webp"
+            alt="Ordena ahora"
+          />
+        </a>
+        <!-- ÁREA DE REDES SOCIALES -->
         <div class="flex justify-center items-center">
-          <!-- Second Absolute -->
           <div
             class="translate-y-10 px-4 flex w-8/12 border-[5px] rounded-[30px] border-white bg-[#FF8383]"
           >
-            <a class="w-fit flex justify-center items-center" href="#"
-              ><img class="w-20 object-cover" src="ig-icon.webp" alt="Instagram" /></a
-            >
-            <a class="w-fit flex justify-center items-center" href="#"
-              ><img class="w-20 object-cover" src="fb-icon.webp" alt="Facebook" /></a
-            >
-            <a class="w-fit flex justify-center items-center" href="#"
-              ><img class="w-20 object-cover" src="email-icon.webp" alt="Email" /></a
-            >
+            <!-- Instagram -->
+            <a class="flex justify-center items-center" href="#">
+              <img
+                class="w-20 object-cover hover:scale-105 hover:rotate-6 transition"
+                src="./ig-icon.webp"
+                alt="Instagram"
+              />
+            </a>
+
+            <!-- Facebook -->
+            <a class="flex justify-center items-center" href="#">
+              <img
+                class="w-20 object-cover hover:scale-105 hover:rotate-6 transition"
+                src="./fb-icon.webp"
+                alt="Facebook"
+              />
+            </a>
+
+            <!-- Email -->
+            <a class="flex justify-center items-center" href="#">
+              <img
+                class="w-20 object-cover hover:scale-105 hover:rotate-6 transition"
+                src="./email-icon.webp"
+                alt="Email"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -82,13 +101,18 @@
 
   <!-- All Arts -->
 
-  <section class="hidden translate-y-20 lg:flex flex-row gap-8 w-2/4 mx-auto">
+  <section
+    class="hidden translate-y-20 lg:flex flex-row gap-8 w-2/4 mx-auto animate-slide-left"
+  >
     <!-- Art 01 -->
     <section
-      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
+      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2] hover:scale-105 transition"
     >
-    <img class="absolute bottom-0 right-0 w-12" src="./decoration-01.gif" alt="Decorate Image">
-      
+      <img
+        class="absolute bottom-0 right-0 w-12"
+        src="./decoration-01.gif"
+        alt="Decorate Image"
+      />
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
         src="art-01.webp"
@@ -97,10 +121,13 @@
     </section>
     <!-- Art 02 -->
     <section
-      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
+      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2] hover:scale-105 transition"
     >
-    <img class="absolute bottom-0 right-0 w-12" src="./decoration-01.gif" alt="Decorate Image">
-      
+      <img
+        class="absolute bottom-0 right-0 w-12"
+        src="./decoration-01.gif"
+        alt="Decorate Image"
+      />
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
         src="art-02.webp"
@@ -109,10 +136,18 @@
     </section>
     <!-- Art 03 -->
     <section
-      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2]"
-    > 
-      <img class="absolute top-0 right-0 w-16" src="./decoration-02.gif" alt="Decorate Image">
-      <img class="absolute bottom-0 right-0 w-12" src="./decoration-01.gif" alt="Decorate Image">
+      class="hidden lg:flex lg:relative w-full lg:h-[56vh] bg-[#FF8383] p-3 rounded-[57px] shadow-[0px_0px_15px_15px_#d54545c2] hover:scale-105 transition"
+    >
+      <img
+        class="absolute top-0 right-0 w-16"
+        src="./decoration-02.gif"
+        alt="Decorate Image"
+      />
+      <img
+        class="absolute bottom-0 right-0 w-12"
+        src="./decoration-01.gif"
+        alt="Decorate Image"
+      />
       <img
         class="object-cover w-full h-full rounded-[45px] border-[5px] border-white flex justify-center items-center"
         src="art-03.webp"
