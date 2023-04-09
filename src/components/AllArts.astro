@@ -1,0 +1,31 @@
+---
+import Arts from "./Arts.astro";
+import ContainerArts from "./ContainerArts.astro";
+import FirstDecoration from "./FirstDecoration.astro";
+---
+
+<!-- All Arts -->
+<section
+  class="hidden translate-y-20 lg:flex flex-row gap-8 w-2/4 mx-auto animate-slide-left"
+>
+  <!-- Art 01 -->
+  <ContainerArts>
+    <FirstDecoration />
+    <Arts source="./art-01.webp" alttext="Pokru Art Example 01" />
+  </ContainerArts>
+  <!-- Art 02 -->
+  <ContainerArts>
+    <FirstDecoration />
+    <Arts source="./art-02.webp" alttext="Pokru Art Example 02" />
+  </ContainerArts>
+  <!-- Art 03 -->
+  <ContainerArts>
+    <img
+      class="absolute top-0 right-0 w-16"
+      src="./decoration-02.gif"
+      alt="Decorate Image"
+    />
+    <FirstDecoration />
+    <Arts source="./art-03.webp" alttext="Pokru Art Example 03" />
+  </ContainerArts>
+</section>

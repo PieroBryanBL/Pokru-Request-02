@@ -1,0 +1,16 @@
+---
+interface Props {
+  source: string;
+  alttext: string;
+  ref: string;
+}
+const { source, alttext, ref } = Astro.props;
+---
+
+<a href={ref}>
+  <img
+    class="object-cover border-[5px] rounded-[75px] border-white bg-[#FFB2B7] w-9/12 mx-auto shadow-[0px_4px_4px_#FF7CA3] hover:scale-105 transition"
+    src={source}
+    alt={alttext}
+  />
+</a>
